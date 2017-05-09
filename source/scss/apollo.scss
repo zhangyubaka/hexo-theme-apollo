@@ -13,7 +13,9 @@
 @font-face {
     font-family: 'sourcesanspro', 'Noto Sans CJK', 'Source Han Sans', source-han-sans-simplified-c, 'Helvetica Neue', Arial, sans-serif;
     src: url('../font/sourcesanspro.woff2') format('woff2'),
-         url('../font/sourcesanspro.woff') format('woff');
+         url('../font/sourcesanspro.woff') format('woff'),
+         url('../font/FiraCode-Regular.woff2') format('woff2'),
+         url('../font/FiraCode-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
