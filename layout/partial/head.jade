@@ -1,5 +1,7 @@
 meta(charset="utf-8")
 meta(name="X-UA-Compatible", content="IE=edge")
+meta(name="theme-color", content="#db3333")
+| !{ autoCanonical(config, page) }
 
 title
     block site_title
@@ -9,13 +11,9 @@ block description
   meta(name="description", content= config.description ? config.description : 'A Blog Powered By Hexo')
 
 
-| !{ autoCanonical(config, page) }
-
 meta(name="viewport", content="width=device-width, initial-scale=1")
 link(rel="icon", href=url_for(theme.favicon))
 link(rel="stylesheet", href=url_for("css/apollo.css"))
-#link(rel="stylesheet", href='//cdn.bootcss.com/Han/3.3.0/han.min.css')
-meta(name="theme-color", content="db3333")
 
 - var xml = config.url + '/atom.xml'
     link(rel="search", type="application/opensearchdescription+xml", href=xml, title=config.title)
